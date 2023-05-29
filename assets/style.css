@@ -476,12 +476,24 @@ h4 {
     margin-top: 20px;
 }
 
+.livro-1 > h6 {
+    margin-top: 10px;
+}
+
 .livro-3 > h4{
     margin-top: 20px;
 }
 
+.livro-3 > h6 {
+    margin-top: 10px;
+}
+
 .livro-5 > h4{
     margin-top: 20px;
+}
+
+.livro-5 > h6 {
+    margin-top: 10px;
 }
 
 
@@ -508,12 +520,24 @@ h4 {
     margin-top: 20px;
 }
 
+.livro-2 > h6 {
+    margin-top: 10px;
+}
+
 .livro-4 > h4{
     margin-top: 20px;
 }
 
+.livro-4 > h6 {
+    margin-top: 10px;
+}
+
 .livro-6 > h4{
     margin-top: 20px;
+}
+
+.livro-6> h6 {
+    margin-top: 10px;
 }
 
 .wrapper-5 {
@@ -740,7 +764,7 @@ h4 {
     .popular-1, .popular-2, .popular-3{
         margin-top: 9%;
     }
-
+    
     .wrapper-4 {
         box-sizing: border-box;
         flex-shrink: 0;
