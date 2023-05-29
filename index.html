@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Shemá Bookstore</title>
+
+</head>
+<body>
+    <!-- Hero -->
+    <div class="wrapper">
+        <a id="button-3"></a>
+        <div class="hero">
+            <div class="header">
+                <div class="navbar">
+                    <div class="logo">
+                        <img id="logo" src="assets/img/logo.webp" alt="Logo">
+                    </div>
+                    <div>
+                        <ul>
+                            <li><a href="#populares">Populares</a></li>
+                            <li><a href="#contato">Contato</a></li>
+                            <li>
+                                <div class="button" ><a href="#catalogo">Catálogo</a></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper-2">
+                <h1>Qual Livro Você <br> Está Procurando?</h1>
+                <h4>Não sabe o que ler agora? explore nosso catálogo!</h4>
+                <div class="action">
+                    <div class="button-2">
+                        <a href="#catalogo"><h3>Explore Agora</h3></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Trending Books -->
+        <div class="wrapper-3" id="populares">
+            <div class="container-1">
+                <div class="vai-pra-baixo"><h2>Livros Mais Amados</h2></div>
+                <h4>Leituras Mais Populares do Ano</h4>
+            </div>
+            <div class="container-2">
+                <div class="popular-1">
+                    <img id="popular-1" src="assets/img/foto-2.webp">
+                    <h4>HISTÓRIAS BÍBLICAS PARA CRIANÇAS - VOL.2</h4>
+                    <h6>R$49</h6>
+                </div>
+                <div class="popular-2">
+                    <img id="popular-1" src="assets/img/foto-1.webp">
+                    <h4>HISTÓRIAS BÍBLICAS PARA CRIANÇAS - VOL.1</h4>
+                    <h6>R$49</h6>
+                </div>
+                <div class="popular-3">
+                    <img id="popular-1" src="assets/img/foto-3.webp">
+                    <h4>HISTÓRIAS BÍBLICAS PARA CRIANÇAS - VOL.3</h4>
+                    <h6>R$52</h6>
+                </div>
+            </div>
+        </div>
+
+        <!-- Catalog -->
+        <div class="wrapper-4" id="catalogo">
+            <div class="container-3">
+                <h2>Catálogo</h2>
+            </div>
+            <div class="container-4">
+                <div class="livro-1">
+                    <img id="popular-1" src="assets/img/foto-4.webp">
+                    <h4>PEDRAS DO RIBEIRO</h4>
+                    <h4>R$45</h4>
+                </div>
+                <div class="livro-2">
+                    <img id="popular-1" src="assets/img/foto-5.webp">
+                    <h4>OS PEQUENOS SERVOS DA PEQUENA SUSY</h4>
+                    <h4>R$35</h4>
+                </div>
+                <div class="livro-3">
+                    <img id="popular-1" src="assets/img/foto-6.webp">
+                    <h4>TREINANDO CORAÇÕES ENSINANDO MENTES</h4>
+                    <h4>R$75</h4>
+                </div>
+            </div>
+            <div class="container-6">    
+                <div class="livro-4">
+                    <img id="popular-1" src="assets/img/foto-7.webp">
+                    <h4>CAMINHANDO PARA O CÉU</h4>
+                    <h4>R$62</h4>
+                </div>
+                <div class="livro-5">
+                    <img id="popular-1" src="assets/img/foto-8.webp">
+                    <h4>PROMESSAS DA BÍBLIA</h4>
+                    <h4>R$45</h4>
+                </div>
+                <div class="livro-6">
+                    <img id="popular-1" src="assets/img/foto-9.webp">
+                    <h4>ANIMAIS DA BÍBLIA</h4>
+                    <h4>R$45</h4>
+                </div>
+            </div>
+        </div>
+
+        <!--Sobre a vendedora-->
+        <div class="wrapper-5" id="contato">
+            <div class="container-5">
+                <h2>Sobre a Vendedora</h2>
+                <h4 class="text">Sou Cléa, uma vendedora apaixonada por livros infantis bíblicos. Meu compromisso é levar as maravilhas das histórias sagradas diretamente às mãos das crianças.</h4>
+                <div class="contato">
+                    <h6>Cléa Aires</h6>
+                    <h5>Contato: (83) 98835-0026</h5>
+                </div>
+            </div>
+    </div>
+
+        <!--footer-->
+        <div class="wrapper-6">
+            <div class="footer"><h4>Gabriel Aires e Pedro Henrique, 2023</h4></div>
+        </div>
+        <!--botão-->
+        <div class="go-top"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+    <script>
+        $(function(){
+
+//Scroll event
+$(window).scroll(function(){
+  var scrolled = $(window).scrollTop();
+  if (scrolled > 200) $('.go-top').fadeIn('slow');
+  if (scrolled < 200) $('.go-top').fadeOut('slow');
+});
+
+//Click event
+$('.go-top').click(function () {
+  $("html, body").animate({ scrollTop: "0" },  500);
+});
+
+});
+    </script>
+</body>
+</html>
